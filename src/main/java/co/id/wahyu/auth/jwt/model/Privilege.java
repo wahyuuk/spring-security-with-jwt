@@ -22,6 +22,6 @@ public class Privilege {
     private String name;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @ManyToMany(mappedBy = "rolePrivilege", fetch = FetchType.EAGER)
+    @ManyToMany(mappedBy = "privileges", fetch = FetchType.EAGER)
     private Set<Role> roles;
 }
